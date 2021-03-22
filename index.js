@@ -55,6 +55,7 @@ const Zdrav = mongoose.model('zdrav')
 //Heroku
 var app = express();
 
+app.set('port', (process.env.PORT || 27017));
 
 //For avoidong Heroku $PORT error
 app.get('/', function (request, response) {
