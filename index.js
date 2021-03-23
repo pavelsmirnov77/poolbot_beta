@@ -4,7 +4,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const mongoose = require('mongoose');
 const fs = require('fs');
 const { response, text } = require('express');
-const express = require('express')
+//const express = require('express')
 const url = process.env.url;
 const database1 = require('./vsurasp.json')
 const database = require('./vsudatabase.json')
@@ -20,7 +20,7 @@ const bot = new TelegramBot(process.env.TOKEN, {
     }
 })
 //Heroku
-var app = express();
+/*var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -30,7 +30,7 @@ app.get('/', function (request, response) {
     response.send(result);
 }).listen(app.get('port'), function () {
     console.log('App is running, server is listening on port ', app.get('port'));
-});
+});*/
 
 //бд расписания
 mongoose.set('debug', true)
