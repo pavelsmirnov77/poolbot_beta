@@ -33,7 +33,7 @@ app.get('/', function (request, response) {
 });
 
 //бд расписания
-//mongoose.set('debug', true)
+mongoose.set('debug', true)
 mongoose.connect('mongodb://localhost/vsudatabase', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
